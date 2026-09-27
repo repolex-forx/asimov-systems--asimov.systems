@@ -1,0 +1,17 @@
+[2026-09-27T19:36:51Z] === ENRICH ITERATION 1 START | repo=asimov-systems/asimov.systems sha=5a4207dd ===
+[2026-09-27T19:36:51Z] [iter=1] PHASE START: enrich repo=asimov-systems/asimov.systems sha=5a4207dd runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/5a4207dd-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/5a4207dd02975851aca1c892d62623b081425cee.nq.gz
+[2026-09-27T19:37:49Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=86 MB
+[2026-09-27T19:37:50Z] [iter=1] AST store loaded triples=227482 load_secs=2 mem_mb=407 MB
+[2026-09-27T19:37:50Z] [iter=1] Step 2: Finding LSP targets mem_mb=407 MB
+[2026-09-27T19:37:50Z] [iter=1] LSP targets found call_sites=464 imports=240 extends=0 implements=0 secs=0
+[2026-09-27T19:37:50Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=407 MB
+[2026-09-27T19:37:52Z] [iter=1] Position index built positions=16875 nodes_with_types=18300 secs=1 mem_mb=407 MB
+[2026-09-27T19:37:52Z] [iter=1] Step 3: Starting LSP resolution mem_mb=407 MB already_completed_types=[] already_completed_files=0
+[2026-09-27T19:37:52Z] [iter=1] Resolving target type target_type=call_site count=464
+[2026-09-27T19:37:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=src/components/magicui/globe.tsx
+[2026-09-27T19:38:10Z] [iter=1] Target type resolved target_type=call_site resolved=131 errors=135 secs=18 mem_mb=407 MB
+[2026-09-27T19:38:10Z] [iter=1] Resolving target type target_type=import_statement count=240
+[2026-09-27T19:38:13Z] [iter=1] Target type resolved target_type=import_statement resolved=114 errors=0 secs=3 mem_mb=407 MB
+[2026-09-27T19:38:17Z] [iter=1] Step 5: Writing final enrichment file triples=10042
+[2026-09-27T19:38:17Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/5a4207dd02975851aca1c892d62623b081425cee.nq.gz size_kb=171
+[2026-09-27T19:38:17Z] [iter=1] PHASE END: enrich elapsed_s=87 elapsed_min=1.4 total_triples=10042
